@@ -24,6 +24,7 @@ export default defineConfig([
         },
         rules: {
             "no-unused-vars": ["error", { varsIgnorePattern: "^[A-Z_]" }],
+            "no-multiple-empty-lines": ["error", { max: 10, maxEOF: 2 }],
         },
     },
 ]);
