@@ -1,4 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
+import { primaryDark } from "../config/colors";
+primaryDark;
 
 export default createGlobalStyle`
     * {
@@ -15,6 +17,10 @@ export default createGlobalStyle`
 
     button {
         cursor: pointer;
+    }
+
+    body {
+        background-color: ${primaryDark};
     }
 
     a {
