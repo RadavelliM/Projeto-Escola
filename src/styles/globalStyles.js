@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
-import { primaryDark } from "../config/colors";
+import { primaryDark, tertiary } from "../config/colors";
 primaryDark;
 
 export default createGlobalStyle`
@@ -20,7 +20,7 @@ export default createGlobalStyle`
     }
 
     body {
-        background-color: ${primaryDark};
+        background-color: ${tertiary};
     }
 
     a {
