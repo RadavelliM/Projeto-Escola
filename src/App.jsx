@@ -1,17 +1,18 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
 
 import GlobalStyles from "./styles/globalStyles.js";
-import Login from "./pages/Login/login";
-import Navbar from "./components/common/navbar/navbar.jsx";
+import Navbar from "./components/navbar/navbar.jsx";
+import PageRoutes from "./routes/index.jsx";
 
 export default function App() {
     return (
         <div className="container">
-            <h1>
+            <BrowserRouter>
                 <GlobalStyles />
                 <Navbar />
-                <Login />
-            </h1>
+                <PageRoutes />
+            </BrowserRouter>
         </div>
     );
 }
