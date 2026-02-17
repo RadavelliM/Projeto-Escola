@@ -1,17 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { toast } from "react-toastify";
-
 import Login from "../pages/Login/login";
 import NotFound404 from "../pages/404/404";
 import Home from "../pages/home/home";
 import PrivateRoute from "./privateRoute";
 
 export default function PageRoutes() {
-    toast.success("ola");
-    toast.info("informacao");
-
     return (
         <Routes>
             <Route path="/" Component={Home} />
