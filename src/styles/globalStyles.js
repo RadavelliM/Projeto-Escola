@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
-import { primaryDark, tertiary } from "../config/colors";
-primaryDark;
+import { tertiary, toastifyError, toastifySucces } from "../config/colors";
+
+import "react-toastify/ReactToastify.css";
 
 export default createGlobalStyle`
     * {
@@ -13,6 +14,15 @@ export default createGlobalStyle`
 
     html, body, :root {
         height: 100%;
+    }
+
+    body .Toastify .Toastify__toast-container .Toastify__toast--success {
+        background-color: ${toastifySucces};
+        color: white;
+    }
+
+    body .Toastify .Toastify__toast-container .Toastify__toast--loading {
+        background-color: ${toastifyError};
     }
 
     button {
